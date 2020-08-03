@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!--meta seo-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuba Eloualidi is a student at the Academy of Schiyar Recognized by the Netherlands - Yuba Eloualidi is online."/>
+    <meta name="keywords" content="Yuba Eloualidi , learn HTML , learn CSS , learn Javascript , learn Java , learn Php"/>
+    <meta name="author" content="Yuba Eloualidi"/>
+    <link rel="icon" href="images/icon.lnk">
+    <link rel="shortcut" href="images/icon.lnk">
+    <link rel="apple-touch-icon" href="images/icon.lnk">
+    <!--meta facebook publication-->
+    <meta property="og:title" content="Yuba Eloualidi - طالب بأكادمية شيار" />
+    <meta property="og:description" content="يوبا الواليدي طالب بأكادمية شيار" />
+        <meta property="og:image" content="https://bit.ly/2CVOuDp" />
+        <meta property="og:image:width" content="315" />  
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:type" content="website" /> 
+    <!--meta twitter publication -->
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="Yuba Eloualidi "/>
+        <meta name="twitter:description" content="Yuba Eloualidi is a student at the Academy of Schiyar Recognized by the Netherlands - Yuba Eloualidi is online."/>
+        <meta name="twitter:image" content="https://bit.ly/2CVOuDp"/>
+    <!--Title-->
+        <title>Login</title>
+    <!--icon-->
+        <link rel="icon" href="images/icon.lnk"/>
+<style>
+        li{
+            background: rgb(221, 69, 69);
+            padding: 10px;
+            margin: 2px;
+            color: white;
+            text-align: left;
+        }
+        a{
+        text-decoration: none;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+<ul>
+    <li><a href="index.html" target="_blank"><b>Home</b></a></li>
+<li><a href="https://www.youtube.com/channel/UCpV_YUhOlcWZ7JKdl69CDWQ" target="_blank"> <b>My channel YouTube</b> </a></li>
+<li><a href="createaccount.html"> <b>Create Account</b> </a></li>
+</ul>
+    </header>
+   <!--login-->
+    <form method="GET" style="text-align: center;">
+        <input style=" margin-top: 70px; border-radius: 10px; color: black; width: 70%;height: 40px "type="email" placeholder=" e-mail" required  name="e-mail" oninvalid="error_email(this)" oninput="error_email()">
+               <br">
+                <input style="margin-top: 20px; border-radius: 10px; color: black;width: 70%;height: 40px;"type="password" placeholder="password" required name="password" oninvalid="error_password(this)" oninput="error_password()">
+               <br>
+     <abbr title="clik here to login"><button style="margin-top: 20px; border-radius: 10px; color: rgb(255, 255, 255);width: 66%; height: 33px; background: rgb(221, 69, 69);"type="submit" name="login"><b>Login</b></button></abbr>      
+     <br>
+     <hr>
+    </form>
+     <strong>or</strong>
+    <Form>
+      <abbr title="clik here to Create Account"><button type="button" style=" margin-top: 15px; border-radius: 10px;width: 66%; height: 33px; background: rgb(221, 69, 69);  "><a href="createaccount.html" target="_blank"><b>create account</b></a></button></abbr>   
+    </Form>
+
+    <script>
+        function error_email(input){
+            if (input.value == '') {
+                input.setCustomValidity('رجاء قم بتعبئة بريد الالكتروني الخاص بك');
+            }  else if (input.validity.typeMismatch){
+                input.setCustomValidity('بريد الكتروني غير صالح , قم بتجربة بريد مختلف');
+            }
+            else{ 
+		input.setCustomValidity('');}
+                return true;   
+         }
+         function error_password(input){
+            if (input.value == '') {
+                input.setCustomValidity('رجاء قم بتعبئة الكود الخاص بك');
+            }  else if (input.validity.typeMismatch){
+                input.setCustomValidity('بريد الكتروني غير صالح , قم بتجربة بريد مختلف');
+            }
+            else{ 
+		input.setCustomValidity('');}
+                return true;   
+         }
+    </script>
+    <!--footer-->
+ <!-- Copyright -->
+ <div style="margin-top: 208px ;" class="footer-copyright text-center py-3">© 2020 Copyright:     
+    <a style="color: blue;" href="index.html">Yuba Eloualidi</a>
+  </div>
+  <!-- Copyright -->
+</body>
+</html>

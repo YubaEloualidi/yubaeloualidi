@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!--meta seo-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yuba Eloualidi is a student at the Academy of Schiyar Recognized by the Netherlands - Yuba Eloualidi is online."/>
+    <meta name="keywords" content="Yuba Eloualidi , learn HTML , learn CSS , learn Javascript , learn Java , learn Php"/>
+    <meta name="author" content="Yuba Eloualidi"/>
+    <!--Title-->
+    <title>Yuba Eloualidi</title>
+    <!--icon-->
+    <link rel="icon" href="images/icon.lnk">
+    <link rel="shortcut" href="images/icon.lnk">
+    <link rel="apple-touch-icon" href="images/icon.lnk">
+    <!--meta facebook publication-->
+    <meta property="og:title" content="Yuba Eloualidi - طالب بأكادمية شيار" />
+    <meta property="og:description" content="يوبا الواليدي طالب بأكادمية شيار" />
+        <meta property="og:image" content="https://bit.ly/2CVOuDp" />
+        <meta property="og:image:width" content="315" />  
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:type" content="website" /> 
+        <!--meta twitter publication-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Yuba Eloualidi ">
+        <meta name="twitter:description" content="Yuba Eloualidi is a student at the Academy of Schiyar Recognized by the Netherlands - Yuba Eloualidi is online."">
+        <meta name="twitter:image" content="https://bit.ly/2CVOuDp">
+
+<style>
+    li{
+            background: rgb(221, 69, 69);
+            padding: 10px;
+            margin: 2px;
+            color: white;
+            text-align: left;
+        }
+        a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+</head>
+<body>
+     <!--header-->
+     <header>
+        <ul>
+            <li><a href="index.html" target="_blank"><b>Home</b></a></li>
+        <li><a href="https://www.youtube.com/channel/UCpV_YUhOlcWZ7JKdl69CDWQ" target="_blank"> <b>My channel YouTube</b> </a></li>
+        <li><a href="login.html"><strong>Login</strong> </a></li>
+    </ul>
+ </header>
+ <!--create account-->
+ <form style="text-align: center;">
+   <input style="margin-top: 70px;
+   border-radius: 10px;
+   color: black;
+   width: 70%;
+   height: 40px" type= "text" placeholder="Your Name" required name="Name" oninvalid="error_name(this)" oninput="error_name()"> <span style="color: red ;">*</span>
+   <br>
+        <input style="margin-top: 30px; border-radius: 10px;color: black;width: 70%; height: 40px" type="email" placeholder="email" required  name="email" oninvalid="error_email(this)" oninput="error_email()" > <span style="color: red ;">*</span>
+   <br>
+        <input style="margin-top: 30px;border-radius: 10px;color: black;width: 70%; height: 40px" type="password" placeholder="password" required name="password" oninvalid="error_password(this)" oninput="error_password()"> <span style="color: red ;">*</span>
+   <br>
+        <input style="margin-top: 30px; border-radius: 10px; color: black; width: 70%; height: 40px" type="date" placeholder="date" required name="date" oninvalid="error_date(this)" oninput="error_date()" > <span style="color: red ;">*</span>
+   <div>
+<select style="margin-top: 30px; border-radius: 10px;color: black;width: 70%; height: 40px"  name="gender" required>
+    <br>
+   <option value=""></option>
+    <option> femme </option>
+    <option>homme</option>
+</select>
+   </div>
+<br>
+ <abbr title="clik here to Create Account"><button style="margin-top: 20px; border-radius: 10px; color: rgb(255, 255, 255);width: 66%;height: 33px;background: rgb(221, 69, 69);" type="submit"> <strong>Create Account</strong> </button></abbr> 
+         <br>
+         <strong>or</strong>
+        <hr>
+   <abbr title="clik here to login "><button type="button" style=" margin-top: 15px; border-radius: 10px;width: 66%; height: 33px; background: rgb(221, 69, 69);"><a href="login.html" target="_blank"><b>Login</b></a></button></abbr>
+    </form>
+    <script>
+function error_name(input){
+            if (input.value == '') {
+                input.setCustomValidity('رجاء قم بتعبئة الاسم الخاص بك');
+            }  else if (input.validity.typeMismatch){
+                input.setCustomValidity('');
+            }
+            else{ 
+		input.setCustomValidity('');}
+                return true;   
+         }
+
+         function error_email(input){
+            if (input.value == '') {
+                input.setCustomValidity('رجاء قم بتعبئة البريد الالكتروني الخاص بك');
+            }  else if (input.validity.typeMismatch){
+                input.setCustomValidity('بريد الكتروني غير صالح , قم بتجربة بريد مختلف');
+            }
+            else{ 
+		input.setCustomValidity('');}
+                return true;   
+         }
+
+         function error_password(input){
+            if (input.value == '') {
+                input.setCustomValidity('رجاء قم بتعبئة الكود الخاص بك');
+            }  else if (input.validity.typeMismatch){
+                input.setCustomValidity('');
+            }
+            else{ 
+		input.setCustomValidity('');}
+                return true;   
+         }
+
+         function error_date(input){
+            if (input.value == '') {
+                input.setCustomValidity('رجاء قم بتعبئة تاريخ الازدياد  الخاص بك');
+            }  else if (input.validity.typeMismatch){
+                input.setCustomValidity('');
+            }
+            else{ 
+		input.setCustomValidity('');}
+                return true;   
+         }
+
+    </script>
+
+    <!--footer-->
+    <footer style="text-align: center;">
+        <div style="margin-top: 170px ;" class="footer-copyright text-center py-3">© 2020 Copyright:     
+            <a style="color: blue;" href="index.html">Yuba Eloualidi</a>
+          </div>
+    </footer>
+    
+</body>
+</html>
